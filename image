@@ -1,0 +1,7 @@
+<section class="hero">
+    <img src="C:\Users\Lenovo\Desktop\image pcs.jpg" alt="Hero Image" class="hero-image">
+    <div class="hero-content">
+        <h1>Welcome to Our Website</h1>
+        <a href="#cta" class="cta-button">Learn More</a>
+    </div>
+</section>
