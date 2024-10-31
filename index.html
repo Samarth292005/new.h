@@ -3,54 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCS Infragold</title>
     <link rel="stylesheet" href="styles.css">
+    <title>PCS Infragold</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to PCS Infragold</h1>
+        <div class="logo">PCS Infragold</div>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>PCS Infragold specializes in high-quality hardware materials for construction and infrastructure, including taps, water storage tanks, and pots.</p>
-        </section>
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product" id="product1">
-                <img src="https://via.placeholder.com/150" alt="Tap" />
+
+    <section id="home" class="hero">
+        <h1>Welcome to PCS Infragold</h1>
+        <p>Your trusted source for quality taps, water tanks, and pots.</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At PCS Infragold, we provide high-quality hardware solutions for all your needs. Our mission is to deliver exceptional products and customer service.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="images/tap.jpg" alt="Taps">
                 <h3>Taps</h3>
-                <p>Durable taps suitable for all your plumbing needs.</p>
-                <button onclick="addToCart('Taps')">Add to Cart</button>
+                <p>High-quality taps for every application.</p>
             </div>
-            <div class="product" id="product2">
-                <img src="https://via.placeholder.com/150" alt="Water Storage Tank" />
-                <h3>Water Storage Tanks</h3>
-                <p>High-quality water storage tanks for homes and businesses.</p>
-                <button onclick="addToCart('Water Storage Tank')">Add to Cart</button>
+            <div class="product">
+                <img src="images/tank.jpg" alt="Water Tanks">
+                <h3>Water Tanks</h3>
+                <p>Durable tanks for reliable water storage.</p>
             </div>
-            <div class="product" id="product3">
-                <img src="https://via.placeholder.com/150" alt="Pots" />
+            <div class="product">
+                <img src="images/pot.jpg" alt="Pots">
                 <h3>Pots</h3>
-                <p>Various pots for indoor and outdoor use.</p>
-                <button onclick="addToCart('Pots')">Add to Cart</button>
+                <p>Beautiful pots for your gardening needs.</p>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@pcsinfragold.com</p>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2024 PCS Infragold. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
