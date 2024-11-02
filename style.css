@@ -30,7 +30,7 @@ nav a {
 }
 
 .hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url('images/hero.jpg') no-repeat center center / cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -42,6 +42,7 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
 }
 
 section {
@@ -51,10 +52,12 @@ section {
 .product-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .product {
     text-align: center;
+    margin: 20px;
 }
 
 .product img {
@@ -65,6 +68,8 @@ section {
 .gallery-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .gallery-container img {
@@ -82,6 +87,8 @@ form {
 input, textarea {
     margin: 10px 0;
     padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -90,6 +97,7 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 footer {
