@@ -1,0 +1,11 @@
+@PutMapping("/{id}")
+public SanitaryItem updateItem(@PathVariable Long id, @RequestBody SanitaryItem item) {
+    return repository.findById(id).map(existingItem -> {
+        existingItem.setName(item.getName());
+        existingItem.setQuantity(item.getQuantity());
+        existingItem.setLocation(item.getLocation());
+        existingItem.setLatitude(item.getLatitude());
+        existingItem.setLongitude(item.getLongitude());
+        return repository.save(existingItem);
+    }).orElseThrow(() -> new RuntimeException("Item not found with id: " + id));
+}
